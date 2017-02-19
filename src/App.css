@@ -1,0 +1,41 @@
+.main-container {
+  height: 100vh;
+}
+
+.main-display {
+  display: flex;
+  height: 100vh;
+}
+
+.right-display {
+  display: flex;
+  align-items: center;
+  justify-content:flex-start;
+  width: 34%;
+  height: 100vh;
+  background-color: #F6A17D;
+}
+
+.left-display {
+  display: flex;
+  align-items: center;
+  justify-content:flex-end;
+  width: 67.5%;
+  height: 100vh;
+}
+
+.middle-left {
+  margin-right: 20%;
+}
+
+.middle-right {
+  height: 434px;
+  width: 346px;
+  box-shadow: 5px 5px 5px rgba(0,0,0,0.7);
+}
+
+.img-display {
+  height: 434px;
+  width: 314px;
+  box-shadow: 5px 5px 5px rgba(0,0,0,0.7);
+}
