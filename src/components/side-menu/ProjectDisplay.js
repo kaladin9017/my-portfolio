@@ -4,7 +4,7 @@ import { Sidebar, Menu, Icon } from 'semantic-ui-react'
 class ProjectDisplay extends Component {
   render() {
     return (
-      <Sidebar as={Menu} className="project-display" direction='right' animation='slide along' width='very very wide' visible={this.props.visible} icon='labeled' vertical>
+      <Sidebar as={Menu} className="project-display" direction='right' animation='slide along' width='very wide' visible={this.props.visible} icon='labeled' vertical>
         <Menu.Item name='home'>
           <Icon name='home' />
           Home

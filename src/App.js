@@ -6,23 +6,16 @@ import ProjectDisplay from './components/side-menu/ProjectDisplay';
 
 import { Sidebar, Segment, Icon } from 'semantic-ui-react'
 
+import { connect } from 'react-redux';
 
   class App extends Component {
-    state = { leftVisible: false, rightVisible: false }
-    toggleLeftVisibility = () => this.setState({ leftVisible: !this.state.leftVisible })
-    toggleRightVisibility = () => this.setState({ rightVisible: !this.state.rightVisible })
 
     render() {
-      const { leftVisible, rightVisible } = this.state
-      // const { rightVisible } = this.state
-
       return (
         <div className="main-container">
-          <Icon name="indent" size="big" onClick={this.toggleLeftVisibility}/>
-          <Icon name="outdent" size="big" onClick={this.toggleRightVisibility}/>
           <Sidebar.Pushable as={Segment}>
-            <SideMenu visible={leftVisible} />
-            <ProjectDisplay visible={rightVisible} />
+            <SideMenu visible={this.props.state.state.leftVisible} />
+            <ProjectDisplay visible={this.props.state.state.rightVisible} />
             <Sidebar.Pusher>
                 {this.props.children}
             </Sidebar.Pusher>
@@ -31,5 +24,9 @@ import { Sidebar, Segment, Icon } from 'semantic-ui-react'
       );
     }
 }
-
-export default App;
+function mapStateToProps(state) {
+  return {
+    state
+  }
+}
+export default connect(mapStateToProps)(App);
