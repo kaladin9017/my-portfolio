@@ -4,6 +4,8 @@ import './App.css';
 import SideMenu from './components/side-menu/SideMenu';
 import ProjectDisplay from './components/side-menu/ProjectDisplay';
 
+import { changeLeftVisible, changeRightVisible } from './components/redux/actions/index';
+
 import { Sidebar, Segment, Icon } from 'semantic-ui-react'
 
 import { connect } from 'react-redux';
@@ -15,7 +17,7 @@ import { connect } from 'react-redux';
         <div className="main-container">
           <Sidebar.Pushable as={Segment}>
             <SideMenu visible={this.props.state.state.leftVisible} />
-            <ProjectDisplay visible={this.props.state.state.rightVisible} />
+            <ProjectDisplay changeVisible={this.props.changeRightVisible} location={this.props.location.pathname} pageInfo={this.props.state.pageInfo} visible={this.props.state.state.rightVisible} />
             <Sidebar.Pusher>
                 {this.props.children}
             </Sidebar.Pusher>
@@ -29,4 +31,4 @@ function mapStateToProps(state) {
     state
   }
 }
-export default connect(mapStateToProps)(App);
+export default connect(mapStateToProps, { changeRightVisible, changeLeftVisible })(App);

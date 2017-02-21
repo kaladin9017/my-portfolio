@@ -1,3 +1,6 @@
+body {
+}
+
 .main-container {
   height: 100vh;
 }
@@ -22,6 +25,12 @@
   justify-content:flex-end;
   width: 67.5%;
   height: 100vh;
+  background-color: #F3F4F3;
+
+}
+.indent {
+  align-self: baseline;
+  margin-right: 158px;
 }
 
 .middle-left {
@@ -38,4 +47,34 @@
   height: 434px;
   width: 314px;
   box-shadow: 5px 5px 5px rgba(0,0,0,0.7);
+  image-rendering: -webkit-optimize-contrast;
+
+}
+
+.project-display {
+}
+
+.project-top {
+  display: flex;
+  flex-direction: column;
+  overflow: auto;
+}
+
+.project-top a{
+  color: #DDA88F;
+}
+
+.project-middle {
+
+}
+
+.project-bottom {
+  width: 425px;
+  height: 300px;
+  background-color: #667482;
+  image-rendering: -webkit-optimize-contrast;
+}
+
+.more-info {
+  cursor: pointer;
 }

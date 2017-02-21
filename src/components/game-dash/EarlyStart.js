@@ -3,7 +3,7 @@ import { Header, Icon } from 'semantic-ui-react';
 import { connect } from 'react-redux';
 import { changeLeftVisible, changeRightVisible } from '../redux/actions/index';
 
-class HomePage extends Component {
+class EarlyStart extends Component {
 
   toggleLeftVisibility = () => {this.props.changeLeftVisible()}
   toggleRightVisibility = () => {this.props.changeRightVisible()}
@@ -19,7 +19,7 @@ class HomePage extends Component {
           </div>
           <div className="middle-right">
             <h4>Project Name</h4>
-            <h1>Early Start</h1>
+            <h1>Game Dash</h1>
             <div>gfutdhcgfjhcj</div>
             <div>gfutdhcgfjhcj</div>
             <div>gfutdhcgfjhcj</div>
@@ -39,4 +39,4 @@ class HomePage extends Component {
   }
 }
 
-export default connect(null, {changeLeftVisible, changeRightVisible})(HomePage);
+export default connect(null, {changeLeftVisible, changeRightVisible})(EarlyStart);
