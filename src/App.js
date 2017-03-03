@@ -17,7 +17,7 @@ import { connect } from 'react-redux';
         <div className="main-container">
           <Sidebar.Pushable as={Segment}>
             <SideMenu visible={this.props.state.state.leftVisible} changeVisible={this.props.changeLeftVisible} />
-            <ProjectDisplay changeVisible={this.props.changeRightVisible} location={this.props.location.pathname} pageInfo={this.props.state.pageInfo} visible={this.props.state.state.rightVisible} />
+            <ProjectDisplay animation='uncover' changeVisible={this.props.changeRightVisible} location={this.props.location.pathname} pageInfo={this.props.state.pageInfo} visible={this.props.state.state.rightVisible} />
             <Sidebar.Pusher>
                 {this.props.children}
             </Sidebar.Pusher>
