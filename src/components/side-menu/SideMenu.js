@@ -1,5 +1,5 @@
 import React, { Component } from 'react'
-import { Sidebar, Menu, Icon, Header, Segment, List, Image } from 'semantic-ui-react'
+import { Sidebar, Menu, Icon, Header, Segment, List, Image, Button } from 'semantic-ui-react'
 import { Link } from 'react-router';
 
 
@@ -17,44 +17,31 @@ class SideMenu extends Component {
                   <List.Item>
                     <List.Icon name='file' />
                     <List.Content>
-                      <Link to='earlystart'><List.Header>Early Start</List.Header></Link>
+                      <Link to='earlystart' onClick={this.props.changeVisible}><List.Header>Early Start</List.Header></Link>
                     </List.Content>
                   </List.Item>
                   <br/>
                   <List.Item>
                     <List.Icon name='file' />
                     <List.Content>
-                      <List.Header>Game Dash</List.Header>
+                      <Link to='gamedash' onClick={this.props.changeVisible}><List.Header>Game Dash</List.Header></Link>
                     </List.Content>
                   </List.Item>
                   <br/>
                   <List.Item>
                     <List.Icon name='file' />
                     <List.Content>
-                      <List.Header>Game Dash</List.Header>
+                      <Link to='breathe' onClick={this.props.changeVisible}><List.Header>Breathe</List.Header></Link>
                     </List.Content>
                   </List.Item>
                   <br/>
                   <List.Item>
                     <List.Icon name='file' />
                     <List.Content>
-                      <List.Header>Game Dash</List.Header>
+                      <Link to='weatherapp' onClick={this.props.changeVisible}><List.Header>Weather App</List.Header></Link>
                     </List.Content>
                   </List.Item>
                   <br/>
-                  <List.Item>
-                    <List.Icon name='file' />
-                    <List.Content>
-                      <List.Header>Game Dash</List.Header>
-                    </List.Content>
-                  </List.Item>
-                  <br/>
-                  <List.Item>
-                    <List.Icon name='file' />
-                    <List.Content>
-                      <List.Header>Game Dash</List.Header>
-                    </List.Content>
-                  </List.Item>
                 </List.List>
               </List.Content>
             </List.Item>
@@ -91,6 +78,9 @@ class SideMenu extends Component {
               </a>
             </List.Item>
           </List>
+          <div>
+            <Button onClick={this.props.changeVisible}size="medium" basic>Close</Button>
+          </div>
         </center>
       </Sidebar>
     )
@@ -98,3 +88,12 @@ class SideMenu extends Component {
 }
 
 export default SideMenu
+
+
+{/* <List.Item>
+  <List.Icon name='file' />
+  <List.Content>
+    <Link to='queenslist' onClick={this.props.changeVisible}><List.Header>QueensList</List.Header></Link>
+  </List.Content>
+</List.Item>
+<br/> */}
