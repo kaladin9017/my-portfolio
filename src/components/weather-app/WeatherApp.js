@@ -22,8 +22,21 @@ class WeatherApp extends Component {
           <div className="middle-right">
             <div><p>{this.props.pageInfo.weatherapp.description}</p></div>
             <br/>
-            <div>
-              <Button onClick={this.toggleRightVisibility.bind(this)} size="medium" basic>Demo</Button>
+            <div style={{
+              display: 'flex',
+              alignItems: 'center',
+              justifyContent:'center'
+            }}
+              >
+              <Button onClick={this.toggleRightVisibility.bind(this)} size="medium" basic>Demo
+                <Icon style={{
+                alignItems: 'center',
+                justifyContent:'center',
+                paddingRight: '8px'
+              }}name="long arrow right" size="large">
+
+              </Icon>
+              </Button>
             </div>
           </div>
 

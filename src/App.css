@@ -33,6 +33,8 @@ body {
 }
 .indent {
   align-self: baseline;
+  padding-left: 12px;
+  padding-top: 12px;
   margin-right: 158px;
 }
 
