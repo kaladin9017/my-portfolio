@@ -15,12 +15,24 @@ body {
 
 .right-display {
   display: flex;
+  flex-direction: column;
   align-items: center;
   justify-content:center;
   width: 34%;
   height: 100vh;
   background-color: #FFFFFF;
 }
+
+.right-right {
+  display: flex;
+  flex-direction: column;
+  align-self: baseline;
+  justify-content: center;
+  height: 434px;
+  width: 346px;
+  box-shadow: 5px 5px 5px rgba(0,0,0,0.7);
+}
+.right-right div p { padding: 8px}
 
 .left-display {
   display: flex;

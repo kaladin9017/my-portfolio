@@ -20,6 +20,15 @@ class QueensList extends Component {
           </div>
 
           <div className="middle-right">
+            <center>
+              <h1>{this.props.pageInfo.queenslist.name}</h1>
+            </center>
+          </div>
+
+        </div>
+
+        <div className="right-display">
+          <div className="right-right">
             <div><p>{this.props.pageInfo.queenslist.description}</p></div>
             <br/>
             <div style={{
@@ -39,15 +48,7 @@ class QueensList extends Component {
               </Button>
             </div>
           </div>
-
         </div>
-
-        <div className="right-display">
-          <center>
-            <h1>{this.props.pageInfo.queenslist.name}</h1>
-          </center>
-        </div>
-
       </div>
     )
   }

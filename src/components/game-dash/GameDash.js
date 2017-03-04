@@ -20,6 +20,15 @@ class GameDash extends Component {
           </div>
 
           <div className="middle-right">
+            <center>
+              <h1>{this.props.pageInfo.gamedash.name}</h1>
+            </center>
+          </div>
+
+        </div>
+
+        <div className="right-display">
+          <div className="right-right">
             <div><p>{this.props.pageInfo.gamedash.description}</p></div>
             <br/>
             <div style={{
@@ -39,15 +48,7 @@ class GameDash extends Component {
               </Button>
             </div>
           </div>
-
         </div>
-
-        <div className="right-display">
-          <center>
-            <h1>{this.props.pageInfo.gamedash.name}</h1>
-          </center>
-        </div>
-
       </div>
     )
   }

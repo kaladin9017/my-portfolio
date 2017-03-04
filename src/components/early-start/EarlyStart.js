@@ -20,6 +20,15 @@ class EarlyStart extends Component {
           </div>
 
           <div className="middle-right">
+            <center>
+              <h1>{this.props.pageInfo.earlystart.name}</h1>
+            </center>
+          </div>
+
+        </div>
+
+        <div className="right-display">
+          <div className="right-right">
             <div><p>{this.props.pageInfo.earlystart.description}</p></div>
             <br/>
             <div style={{
@@ -39,15 +48,7 @@ class EarlyStart extends Component {
               </Button>
             </div>
           </div>
-
         </div>
-
-        <div className="right-display">
-          <center>
-            <h1>{this.props.pageInfo.earlystart.name}</h1>
-          </center>
-        </div>
-
       </div>
     )
   }

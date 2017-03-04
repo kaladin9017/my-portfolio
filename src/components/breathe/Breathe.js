@@ -20,6 +20,15 @@ class Breathe extends Component {
           </div>
 
           <div className="middle-right">
+            <center>
+              <h1>{this.props.pageInfo.breathe.name}</h1>
+            </center>
+          </div>
+
+        </div>
+
+        <div className="right-display">
+          <div className="right-right">
             <div><p>{this.props.pageInfo.breathe.description}</p></div>
             <br/>
             <div style={{
@@ -39,15 +48,7 @@ class Breathe extends Component {
               </Button>
             </div>
           </div>
-
         </div>
-
-        <div className="right-display">
-          <center>
-            <h1>{this.props.pageInfo.breathe.name}</h1>
-          </center>
-        </div>
-
       </div>
     )
   }
