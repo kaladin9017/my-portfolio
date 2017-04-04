@@ -32,7 +32,7 @@ body {
   width: 346px;
   box-shadow: 5px 5px 5px rgba(0,0,0,0.7);
 }
-.right-right div p { padding: 8px}
+.right-right div p { padding: 8px }
 
 .left-display {
   display: flex;

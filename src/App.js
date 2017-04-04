@@ -6,13 +6,14 @@ import ProjectDisplay from './components/side-menu/ProjectDisplay';
 
 import { changeLeftVisible, changeRightVisible } from './components/redux/actions/index';
 
-import { Sidebar, Segment, Icon } from 'semantic-ui-react'
+import { Sidebar, Segment } from 'semantic-ui-react'
 
 import { connect } from 'react-redux';
 
   class App extends Component {
 
     render() {
+      console.log(this.props.state)
       return (
         <div className="main-container">
           <Sidebar.Pushable as={Segment}>

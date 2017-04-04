@@ -6,7 +6,7 @@ import App from './App';
 import EarlyStart from './components/early-start/EarlyStart';
 import GameDash from './components/game-dash/GameDash';
 import Breathe from './components/breathe/Breathe';
-import WeatherApp from './components/weather-app/WeatherApp';
+import FantasyBookApp from './components/fantasy-book-app/FantasyBookApp';
 import QueensList from './components/queenslist/QueensList';
 
 export default (
@@ -14,7 +14,7 @@ export default (
     <IndexRoute component={EarlyStart}/>
     <Route path='/earlystart' component={EarlyStart} />
     <Route path='/gamedash' component={GameDash} />
-    <Route path='/weatherapp' component={WeatherApp} />
+    <Route path='/fantasybookalley' component={FantasyBookApp} />
     <Route path='/breathe' component={Breathe} />
     <Route path='/queenslist' component={QueensList} />
   </Route>

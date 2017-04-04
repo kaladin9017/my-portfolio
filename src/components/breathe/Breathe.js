@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import { Header, Icon, Button } from 'semantic-ui-react';
+import { Icon, Button } from 'semantic-ui-react';
 import { connect } from 'react-redux';
 import { changeLeftVisible, changeRightVisible } from '../redux/actions/index';
 

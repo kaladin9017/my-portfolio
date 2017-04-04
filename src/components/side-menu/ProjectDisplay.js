@@ -1,10 +1,10 @@
 import React, { Component } from 'react'
-import { Sidebar, Menu, Icon, Segment, Header, Button } from 'semantic-ui-react'
+import { Sidebar, Segment, Header, Button } from 'semantic-ui-react'
 
 class ProjectDisplay extends Component {
   render() {
     let pageInfo;
-    if(this.props.location == '/') {
+    if(this.props.location === '/') {
       pageInfo = this.props.pageInfo.earlystart;
     }
     else {
@@ -31,7 +31,7 @@ class ProjectDisplay extends Component {
             <br/>
             <br/>
             <Header as='h3'>DEMO</Header>
-            <img className="project-bottom" src={pageInfo.gif}/>
+            <img className="project-bottom" src={pageInfo.gif} alt=""/>
             <br/>
             <br/>
             <div><Button  size="medium" basic onClick={this.props.changeVisible}>Close</Button></div>

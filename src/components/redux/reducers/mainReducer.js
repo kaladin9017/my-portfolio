@@ -9,8 +9,9 @@ export default function (state = initialState, action) {
 
   case GET_LEFT_SIDEBAR_STATE:
     return Object.assign({}, state, {leftVisible: !state.leftVisible});
+
+    default:
+    
+    return state;
   }
-
-  return state;
-
 }

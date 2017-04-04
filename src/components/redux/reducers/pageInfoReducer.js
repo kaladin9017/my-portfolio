@@ -4,7 +4,7 @@ const initialState = {
   gamedash: { name:'Game Dash', description: 'A dashboard used to consolidate 3rd party tools to enable gamers to enhance their gameplay through metagaming.', gif: 'http://i.imgur.com/eh2yPl3.gif', spec:'React, React-Router, Redux, HTML, CSS, Webpack, Babel, Passport, Restful API', link: 'http://game-dash.herokuapp.com', image:'http://i.imgur.com/2MEUxLe.png?4', github: 'https://github.com/kaladin9017/Game-Dash' },
   breathe: { name:'Breathe', description: 'Mindful meditation app that generates random phrases using keywords provided by the user to provide a unique experience each time the user logs in.', gif: 'http://i.imgur.com/Ig3DiEH.gif', spec:'React, CSS, React-Player, React-Router', link: 'http://shy-dream.herokuapp.com/', image:'http://i.imgur.com/Mx24CX3.png?1', github: 'https://github.com/kaladin9017/Breathe' },
   queenslist: { name:'QueensList', description: '', gif: '', spec:'', link: '#', image:'#' },
-  weatherapp: { name:'Weather App', description: 'Weather app used to experiment with virtual dom and react lifecycle methods', gif: 'http://i.imgur.com/S1mcd1V.gif', spec:'React, Html, Css, Webpack, babel', link: '#', image:'http://i.imgur.com/G2xfh7G.png', github: 'https://github.com/kaladin9017/weather' },
+  fantasybookalley: { name:'Fantasy Book Alley', description: 'A curated list of fantasy book recommendations and reviews gathered from the online community of book lovers.', gif: 'http://i.imgur.com/EcO2FS5.gif', spec:'React, Html, Css3, CSS Module, Webpack, babel, MongoDB, mongoose, x-ray(webscraper)', link: 'http://fantasy-book-alley.herokuapp.com/', image:'http://i.imgur.com/UeEBhAa.png', github: 'https://github.com/kaladin9017/fantasy-book-app' },
 };
 
 export default function (state = initialState, action) {
@@ -12,7 +12,8 @@ export default function (state = initialState, action) {
 
   case GET_PAGE_INFO:
     return state;
-}
-  return state;
 
+    default:
+    return state;
+  }
 }

@@ -1,9 +1,9 @@
 import React, { Component } from 'react';
-import { Header, Icon, Button } from 'semantic-ui-react';
+import { Icon, Button } from 'semantic-ui-react';
 import { connect } from 'react-redux';
 import { changeLeftVisible, changeRightVisible } from '../redux/actions/index';
 
-class WeatherApp extends Component {
+class FantasyBookApp extends Component {
 
   toggleLeftVisibility = () => {this.props.changeLeftVisible()}
   toggleRightVisibility = () => {this.props.changeRightVisible()}
@@ -21,7 +21,7 @@ class WeatherApp extends Component {
 
           <div className="middle-right">
             <center>
-              <h1>{this.props.pageInfo.weatherapp.name}</h1>
+              <h1>{this.props.pageInfo.fantasybookalley.name}</h1>
             </center>
           </div>
 
@@ -29,7 +29,7 @@ class WeatherApp extends Component {
 
         <div className="right-display">
           <div className="right-right">
-            <div><p>{this.props.pageInfo.weatherapp.description}</p></div>
+            <div><p>{this.props.pageInfo.fantasybookalley.description}</p></div>
             <br/>
             <div style={{
               display: 'flex',
@@ -59,4 +59,4 @@ function mapStateToProps(state) {
     pageInfo: state.pageInfo
   }
 }
-export default connect(mapStateToProps, {changeLeftVisible, changeRightVisible})(WeatherApp);
+export default connect(mapStateToProps, {changeLeftVisible, changeRightVisible})(FantasyBookApp);

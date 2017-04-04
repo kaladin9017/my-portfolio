@@ -1,5 +1,5 @@
 import React, { Component } from 'react'
-import { Sidebar, Menu, Icon, Header, Segment, List, Image, Button } from 'semantic-ui-react'
+import { Sidebar, Icon, Header, Segment, List, Image, Button } from 'semantic-ui-react'
 import { Link } from 'react-router';
 
 
@@ -24,6 +24,13 @@ class SideMenu extends Component {
                   <List.Item>
                     <List.Icon name='file' />
                     <List.Content>
+                      <Link to='fantasybookalley' onClick={this.props.changeVisible}><List.Header>Fantasy Book Alley</List.Header></Link>
+                    </List.Content>
+                  </List.Item>
+                  <br/>
+                  <List.Item>
+                    <List.Icon name='file' />
+                    <List.Content>
                       <Link to='gamedash' onClick={this.props.changeVisible}><List.Header>Game Dash</List.Header></Link>
                     </List.Content>
                   </List.Item>
@@ -35,13 +42,6 @@ class SideMenu extends Component {
                     </List.Content>
                   </List.Item>
                   <br/>
-                  <List.Item>
-                    <List.Icon name='file' />
-                    <List.Content>
-                      <Link to='weatherapp' onClick={this.props.changeVisible}><List.Header>Weather App</List.Header></Link>
-                    </List.Content>
-                  </List.Item>
-                  <br/>
                 </List.List>
               </List.Content>
             </List.Item>
@@ -50,7 +50,7 @@ class SideMenu extends Component {
           <br/>
           <br/>
             <Header as='h2'>
-              <Image shape='circular' src='https://media.licdn.com/mpr/mpr/shrinknp_400_400/AAEAAQAAAAAAAAmZAAAAJDk5YjA2Njc1LWYxYzEtNDQwYi04YTM2LTc3OGQ3MDYzOGFkMg.jpg' />
+              <Image shape='circular' src='http://i.imgur.com/eilHkwY.png?1' />
               {' '}About Me
             </Header>
             <p>
@@ -88,12 +88,3 @@ class SideMenu extends Component {
 }
 
 export default SideMenu
-
-
-{/* <List.Item>
-  <List.Icon name='file' />
-  <List.Content>
-    <Link to='queenslist' onClick={this.props.changeVisible}><List.Header>QueensList</List.Header></Link>
-  </List.Content>
-</List.Item>
-<br/> */}
