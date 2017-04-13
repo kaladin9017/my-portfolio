@@ -3,7 +3,7 @@ This project was bootstrapped with [Create React App](https://github.com/faceboo
 # My Portfolio WebSite
 
 ## Description
- - A curated list of fantasy book recommendations and reviews gathered from the online community of book lovers.
+ - My first portfolio app
 
 
 ## Tech Stack
